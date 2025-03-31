@@ -2,11 +2,8 @@ import streamlit as st
 import requests
 import pandas as pd
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
-
-API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
+API_KEY = st.secrets("GOOGLE_MAPS_API_KEY")
 
 st.title("Recherche de Commerces Google Maps")
 
