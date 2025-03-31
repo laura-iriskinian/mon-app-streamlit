@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 import os
 
-API_KEY = st.secrets("GOOGLE_MAPS_API_KEY")
+API_KEY = st.secrets["GOOGLE_MAPS_API_KEY"]
 
 st.title("Recherche de Commerces Google Maps")
 
